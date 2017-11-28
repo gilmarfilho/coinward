@@ -1,20 +1,75 @@
+<!DOCTYPE html>
+
 <html>
   <head>
     <title>Coin Ward</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
-    <script src="../javascript/index.js"></script>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- P5.js library -->
+	<script src="../assets/javascript/p5.min.js"></script>
+	<!-- Bootstrap core CSS -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+    <link href="../assets/css/full-width-pics.css" rel="stylesheet">
+    <!-- Script for update the coin value -->
+	<script src="../assets/javascript/index.js"></script>
   </head>
+  
   <body>
-    <div class="container">
-      <h1>Coin Ward</h1><br>
-      <div class="panel panel-default">
-        <h4>Bitcoin</h4><br>
-        <ul class="list-group">
-          <li class="list-group-item" id="btcValueUSD"></li>
-          <li class="list-group-item" id="btcValueGBP"></li>
-          <li class="list-group-item" id="btcValueEUR"></li>
-        </ul>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Coin Ward</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Bitcoin
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ethereum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Monero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Litecoin</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+
+    <!-- Header - set the background image for the header in the line below -->
+
+    <!-- Content section -->
+    <section class="py-5">
+      <div class="container">
+        <h1>Bitcoin</h1>
+		<p id="btcValueUSD" class="lead"></p>
+		<p id="btcValueGBP" class="lead"></p>
+		<p id="btcValueEUR" class="lead"></p>
+      </div>
+    </section>
+
+    <!-- Image Section - set the background image for the header in the line below -->
+    <section class="py-5 bg-image-full" style="background-image: url('https://unsplash.it/1900/1080?image=1081');">
+      <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+      <div style="height: 100px;"></div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Coin Ward 2017</p>
+      </div>
+    </footer>
   </body>
 </html>
